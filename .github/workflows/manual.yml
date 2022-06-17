@@ -29,5 +29,5 @@ jobs:
       - name: install dependencies 
         run: |
           chmod +x ./install_dependencies.sh
-          ./install_dependencies.sh -e ${{ github.event.inputs.name }} -a /tmp/artifacts -f /usr/bin/pip
+          ./install_dependencies.sh -e ${{ github.event.inputs.env_name }} -a /tmp/artifacts -f /usr/bin/pip
         working-directory: ./examples/other_pipelines/Linux/
