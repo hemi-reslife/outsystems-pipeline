@@ -32,5 +32,5 @@ jobs:
       run: pwd
     - name: test2
       run: ls 
-    - name: install dependencies 
+    #- name: install dependencies 
       #run: ./examples/Linux/install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
