@@ -31,4 +31,4 @@ jobs:
     #  - name: test2
     #    run: ls 
     - name: install dependencies 
-      run: ./examples/other_pipelines/Linux/install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
+      run: ${GITHUB_WORKSPACE}/examples/other_pipelines/Linux/install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
