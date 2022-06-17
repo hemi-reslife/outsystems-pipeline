@@ -26,13 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
       - name: install dependencies 
         run: |
-        chmod +x ${GITHUB_WORKSPACE}/examples/other_pipelines/Linux/install_dependencies.sh
-        ${GITHUB_WORKSPACE}/examples/other_pipelines/Linux/install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
-    #   with:
-    #     path: main
-    #  - name: test2
-    #    run: ls 
- 
+          chmod +x ./install_dependencies.sh
+          ./install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
+        working-directory: ${GITHUB_WORKSPACE}/examples/other_pipelines/Linux/
