@@ -30,4 +30,4 @@ jobs:
         run: |
           chmod +x ./install_dependencies.sh
           ./install_dependencies.sh -e ${{ github.event.inputs.name }} -a/tmp/artifacts
-        working-directory: ${GITHUB_WORKSPACE}/examples/other_pipelines/Linux/
+        working-directory: ./examples/other_pipelines/Linux/
